@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="这是摘要">
+<meta name="description" content="配置介绍logback 配置主要分为三大块：  logger appender layout   logger日志记录器，主要用于关联日志对象，同时还可以定义日志的「类型」、「级别」 appender日志输出目的地，常用的有「控制台」，「文件」，「syslog」 layout日志输出格式，负责将日志按照制定的格式输出">
 <meta name="keywords" content="logback,java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="logback 使用配置小记">
 <meta property="og:url" content="http://yoursite.com/2018/06/10/logback-readme/index.html">
 <meta property="og:site_name" content="MeYJ&#39;s Notes">
-<meta property="og:description" content="这是摘要">
+<meta property="og:description" content="配置介绍logback 配置主要分为三大块：  logger appender layout   logger日志记录器，主要用于关联日志对象，同时还可以定义日志的「类型」、「级别」 appender日志输出目的地，常用的有「控制台」，「文件」，「syslog」 layout日志输出格式，负责将日志按照制定的格式输出">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-05-21T15:08:14.714Z">
+<meta property="og:updated_time" content="2019-05-21T15:49:33.056Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="logback 使用配置小记">
-<meta name="twitter:description" content="这是摘要">
+<meta name="twitter:description" content="配置介绍logback 配置主要分为三大块：  logger appender layout   logger日志记录器，主要用于关联日志对象，同时还可以定义日志的「类型」、「级别」 appender日志输出目的地，常用的有「控制台」，「文件」，「syslog」 layout日志输出格式，负责将日志按照制定的格式输出">
 
 
 
@@ -325,9 +325,7 @@
       
 
       
-        <p>这是摘要</p>
-<a id="more"></a>
-<h1 id="配置介绍"><a href="#配置介绍" class="headerlink" title="配置介绍"></a>配置介绍</h1><p>logback 配置主要分为三大块：</p>
+        <h1 id="配置介绍"><a href="#配置介绍" class="headerlink" title="配置介绍"></a>配置介绍</h1><p>logback 配置主要分为三大块：</p>
 <ul>
 <li>logger</li>
 <li>appender</li>
@@ -336,6 +334,7 @@
 <h2 id="logger"><a href="#logger" class="headerlink" title="logger"></a>logger</h2><p>日志记录器，主要用于关联日志对象，同时还可以定义日志的「类型」、「级别」</p>
 <h2 id="appender"><a href="#appender" class="headerlink" title="appender"></a>appender</h2><p>日志输出目的地，常用的有「控制台」，「文件」，「syslog」</p>
 <h2 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h2><p>日志输出格式，负责将日志按照制定的格式输出</p>
+<a id="more"></a>
 <h2 id="日志级别排序"><a href="#日志级别排序" class="headerlink" title="日志级别排序"></a>日志级别排序</h2><p>日志级别从低到高依次为：TRACE &lt; DEBUG &lt; INFO &lt; WARN &lt; ERROR</p>
 <p>定义的级别越低，输出的日志内容越多。使用最多的是 DEBUG（调试信息），INFO（普通提示），ERROR（错误消息） 三个级别。</p>
 <h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>logback 的配置文件为 logback.xml，只要将此配置文件放置在程序的 classpath 目录下，使用时 logback 会自动加载此配置。</p>
