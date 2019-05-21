@@ -579,8 +579,7 @@
 
       
         
-          
-            <h2 id="创建型模式"><a href="#创建型模式" class="headerlink" title="创建型模式"></a>创建型模式</h2><blockquote>
+          <h2 id="创建型模式"><a href="#创建型模式" class="headerlink" title="创建型模式"></a>创建型模式</h2><blockquote>
 <p>这些设计模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。– 菜鸟教程</p>
 </blockquote>
 <ul>
@@ -590,38 +589,13 @@
 <li>建造者模式(Builder Patter)</li>
 <li>原型模式(Prototype Pattern)</li>
 </ul>
-<h2 id="结构型模式"><a href="#结构型模式" class="headerlink" title="结构型模式"></a>结构型模式</h2><blockquote>
-<p>这些设计模式关注类和对象的组合。继承的概念被用来组合接口和定义组合对象获得新功能的方式 – 菜鸟教程</p>
-</blockquote>
-<ul>
-<li>适配器模式(Adapter Pattern)</li>
-<li>桥接模式(Bridge Pattern)</li>
-<li>过滤器模式(Filter/Criteria Pattern)</li>
-<li>组合模式(Composite Pattern)</li>
-<li>装饰器模式(Decorator Pattern)</li>
-<li>外观模式(Facade Pattern)</li>
-<li>享元模式(Flyweight Pattern)</li>
-<li>代理模式(Proxy Pattern)</li>
-</ul>
-<h2 id="行为型模式"><a href="#行为型模式" class="headerlink" title="行为型模式"></a>行为型模式</h2><blockquote>
-<p>这些设计模式特别关注对象之间的通信。– 菜鸟教程</p>
-</blockquote>
-<ul>
-<li>责任链模式(Chain of Responsibility Pattern)</li>
-<li>命令模式(Command Pattern)</li>
-<li>解释器模式(Interpreter Pattern)</li>
-<li>迭代器模式(Iterator Pattern)</li>
-<li>中介者模式(Mediator Pattern)</li>
-<li>备忘录模式(Memento Pattern)</li>
-<li>观察者模式(Observer Pattern)</li>
-<li>状态模式(State Pattern)</li>
-<li>空对象模式(Null Object Pattern)</li>
-<li>策略模式(Strategy Pattern)</li>
-<li>模版模式(Template Pattern)</li>
-<li>访问者模式(Visitor Pattern)</li>
-</ul>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/04/design-pattern-types/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -738,27 +712,17 @@
 
       
         
-          
-            <p>据说，第一次写博客，不知道写什么的时候，最好的选择就是写一写设计模式。那我就遵从这个建议了，把设计模式写一写吧，刚好也是整理下，自己本身对设计模式这块也是一知半解，就当做学习笔记了。</p>
+          <p>据说，第一次写博客，不知道写什么的时候，最好的选择就是写一写设计模式。那我就遵从这个建议了，把设计模式写一写吧，刚好也是整理下，自己本身对设计模式这块也是一知半解，就当做学习笔记了。</p>
 <p>本篇作为引子，先介绍下设计模式的六大原则。之后再陆续介绍23种设计模式。</p>
 <p>废话不多说，开始吧。</p>
 <hr>
-<h2 id="开闭原则"><a href="#开闭原则" class="headerlink" title="开闭原则"></a>开闭原则</h2><p>开闭原则的特点是：对扩展开放，对修改关闭。</p>
-<h2 id="里氏代换原则"><a href="#里氏代换原则" class="headerlink" title="里氏代换原则"></a>里氏代换原则</h2><p>任何基类出现的地方，都可以用子类替换。Java中的多态就是对里氏代换原则的实现。</p>
-<h2 id="依赖倒转原则"><a href="#依赖倒转原则" class="headerlink" title="依赖倒转原则"></a>依赖倒转原则</h2><p>面向抽象编程，依赖抽象不依赖具体。</p>
-<h2 id="接口隔离原则"><a href="#接口隔离原则" class="headerlink" title="接口隔离原则"></a>接口隔离原则</h2><p>客户端依赖的接口应该是<strong>最小接口</strong>。</p>
-<p>一个接口代表一个角色，一个接口不应该承担过多的角色，这会导致接口臃肿，污染接口和角色。</p>
-<p>客户端如果依赖了不需要使用的接口，这些接口变动时有可能也会引起客户端的变动，得不偿失。</p>
-<h2 id="迪米特法则"><a href="#迪米特法则" class="headerlink" title="迪米特法则"></a>迪米特法则</h2><p>也叫作<strong>最少知道原则</strong>，这一原则是为了使系统中的模块能相互独立，相互间尽量少的产生依赖关系，减少类之间的耦合。</p>
-<h2 id="合成复用原则"><a href="#合成复用原则" class="headerlink" title="合成复用原则"></a>合成复用原则</h2><p>尽量使用组合/聚合，少用继承。</p>
-<hr>
-<p>从以上六大原则可以看出，设计模式的最终目的就是为了软件模块之间<strong>减少依赖，较少耦合</strong>。</p>
-<p>模块和模块之间依赖的减少，可以使得模块的独立性增强，单个模块的变动不会影响其他模块。</p>
-<p>但是模块之间不可能完全独立，肯定会存在相互依赖的关系，设计模式就是要将依赖降到最低，最终必不可少的依赖可以通过第三方进行中转实现。</p>
-<p>完全按照设计模式设计出的理想系统，虽然从理论上来说趋于完美，但是在实际使用中还是会出现各种问题，例如：系统设计过于复杂臃肿，性能低下等。</p>
-<p>因此，设计模式虽好，但是不能为了模式而模式，盲目使用，还是应该理论结合实际，不断探索，方能得到最适合的使用方式。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/03/design-pattern-six-principles/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
